@@ -12,7 +12,7 @@ null _ = false
 
 snoc :: forall a. List a -> a -> List a
 snoc Nil b = b : Nil
-snoc (Cons a _) b = a : b : Nil
+snoc (a : b) c = a : (snoc b c)
 
 length :: forall a. List a -> Int
 length Nil = 0

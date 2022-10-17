@@ -13,4 +13,6 @@ main = do
   logShow (null l1)
   let l2 = snoc l1 2
   logShow (l2)
-  logShow (length l2)
+  let l3 = snoc l2 3
+  logShow (l3)
+  logShow (length l3)
